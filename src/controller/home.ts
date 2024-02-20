@@ -1,10 +1,10 @@
-import { GET, HTTPController } from '@artusx/core';
+import { Controller, GET } from '@artusx/core';
 import type { ArtusxContext } from '@artusx/core';
 
-@HTTPController()
+@Controller()
 export default class HomeController {
   @GET('/')
   async home(ctx: ArtusxContext) {
-    (ctx as any).body = 'Hello World';
+    ctx.body = 'Hello World';
   }
 }

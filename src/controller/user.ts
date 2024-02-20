@@ -1,9 +1,9 @@
 import { Inject } from '@artus/core';
-import { GET, HTTPController } from '@artusx/core';
+import { Controller, GET } from '@artusx/core';
 import type { ArtusxContext } from '@artusx/core';
 import { UserService } from '../service/user';
 
-@HTTPController()
+@Controller()
 export default class UserController {
   @Inject()
   user: UserService;

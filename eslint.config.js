@@ -18,5 +18,4 @@ module.exports = antfu({
     'ts/consistent-type-imports': ['off'],
     'ts/semi': ['error', 'always'],
   },
-  ignores: ['balloon-game/**/*'],
 });
